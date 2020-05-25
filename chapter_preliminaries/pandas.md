@@ -13,7 +13,7 @@ We will cover more data preprocessing techniques in later chapters.
 
 ## Reading the Dataset
 
-As an example, we begin by creating an artificial dataset that is stored in a csv (comma-separated values) file `../data/house_tiny.csv`. Data stored in other formats may be processed in similar ways. The following `mkdir_if_not_exist` function ensures that the directory `../data` exists. The comment `# Saved in the d2l package for later use` is a special mark where the following function, class, or import statements
+As an example, we begin by creating an artificial dataset that is stored in a csv (comma-separated values) file `../data/house_tiny.csv`. Data stored in other formats may be processed in similar ways. The following `mkdir_if_not_exist` function ensures that the directory `../data` exists. The comment `# Saved in the d2l package for use` is a special mark where the following function, class, or import statements
 are also saved in the `d2l` package so that we can directly invoke `d2l.mkdir_if_not_exist()` later.
 
 ```{.python .input}
@@ -61,7 +61,7 @@ where imputation replaces missing values with substituted ones,
 while deletion ignores missing values. Here we will consider imputation.
 
 By integer-location based indexing (`iloc`), we split `data` into `inputs` and `outputs`,
-where the former takes the first 2 columns while the later only keeps the last column.
+where the former takes the first 2 columns while the latter only keeps the last column.
 For numerical values in `inputs` that are missing, we replace the "NaN" entries with the mean value of the same column.
 
 ```{.python .input}
